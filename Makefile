@@ -5,7 +5,7 @@ TOKEN				:= $(shell docker logs -t $(DOCKER_IMAGE_NAME) 2>&1 | awk 'match($$0, "
 hub:
 	- docker rm -f $(DOCKER_IMAGE_NAME)
 		docker build -t $(DOCKER_IMAGE_NAME) .
-		docker run --name $(DOCKER_IMAGE_NAME) -d -p 8888:8888 $(DOCKER_IMAGE_NAME)
+		docker run -d -p 8888:8888 -v $(shell pwd)/notebooks:/home/jovyan/notebooks --name $(DOCKER_IMAGE_NAME) $(DOCKER_IMAGE_NAME)
 
 .PHONY: login
 login:
