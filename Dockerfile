@@ -1,2 +1,2 @@
 FROM jupyterhub/singleuser
-RUN pip install seaborn
+RUN pip install numpy pandas scikit-learn seaborn boto3
