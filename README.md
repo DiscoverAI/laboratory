@@ -1,4 +1,6 @@
 # Laboratory
+[![Gitter](https://badges.gitter.im/discoverai/community.svg)](https://gitter.im/discoverai/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 A collection of _Jupyter_ notebooks. This contains all research notes for related topics.
 
 ## Run notebook hub server
